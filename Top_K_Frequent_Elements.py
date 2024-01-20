@@ -9,4 +9,3 @@ for i in range(k):
     lst.append(maxmimumkey)
     res.pop(maxmimumkey)
 print(lst)
-    
