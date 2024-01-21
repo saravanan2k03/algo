@@ -6,7 +6,7 @@ for i in range(len(nums)):
         if i != j:
             sumval = nums[i] + nums[j]
             if sumval == target:
-               print(i,j)
+               print(i+1,j+1)
                print(sumval)
 
 
