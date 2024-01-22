@@ -1,2 +1,1 @@
-print (middleIndex)
-print (aList[int(middleIndex)])
+        # print(triplet)
