@@ -1,6 +1,23 @@
+stack = []
+res=[]
+s = "()[]"
+pattern = {"(":")","[":"]","{":"}"}
+for i in s:
+    stack.append(i)
 
-lst = [0,1,0,2,1,0,1,3,2,1,2,1]
-if 1 < 1:
-    print("right")
-else:
-    print("left")
+print(stack)
+l=0
+r=len(stack)-1
+print(r)
+print(stack[r])
+while l < r:
+    r=len(stack)-1
+    stack[r]
+    if pattern.get(str(stack[l])) == stack[r]:
+        res.append(True)
+        stack.pop(l)
+        stack.pop(r)
+    else:
+        stack.pop(l)
+        res.append(False)
+print(res)

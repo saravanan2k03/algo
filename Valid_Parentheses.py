@@ -1,13 +1,13 @@
-s = "()"
-print(len(s))
-stack = []
-for i in range(len(s)):
-    print(s[i])
-    stack.append(s[i])
-    if len(stack) > 1:
-        print(stack)
-        stval1 = stack[i-1]
-        stval = stack[i]
-        print(stval,stval1)
-        if stack[i] == stack[i-1]:
-            print("Stack")
+closeToOpen = { ")" : "(", "]" : "[", "}" : "{" }
+s = "(]"
+stack  = []
+for c in s:
+    if c in closeToOpen:
+        if stack and stack[-1] == closeToOpen[c]:
+            stack.pop()
+        else:
+            print(False)
+    else:
+        stack.append(c)
+val = True if not stack else False
+print(val)
