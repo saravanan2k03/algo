@@ -113,3 +113,16 @@ lst = [0,1,0,2,1,0,1,3,2,1,2,1]
 
 if lst :
     print("left")
+
+
+
+s="saravanan"
+left = 0
+right = len(s)-1
+result = ""
+while(left <= right):
+    result +=s[right]
+    right-=1
+
+print(result)
+
