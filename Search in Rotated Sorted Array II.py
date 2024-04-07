@@ -1,4 +1,4 @@
-nums = [1,1,1,1,1,1,1,1,1,13,1,1,1,1,1,1,1,1,1,1,1,1]
+nums = [1,2,3,4,5,6,7,8,9,13]
 target = 13
 def searchtheval(nums,target) -> int:
     low,high=0,len(nums)-1
