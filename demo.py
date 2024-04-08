@@ -117,12 +117,17 @@ if lst :
 
 
 s="saravanan"
-left = 0
-right = len(s)-1
-result = ""
-while(left <= right):
-    result +=s[right]
-    right-=1
+s= s[::-1]
+print(s)
+# left = 0
+# right = len(s)-1
+# result = ""
+# while(left <= right):
+#     result +=s[right]
+#     right-=1
 
-print(result)
+# print(result)
+
+
+
 
