@@ -28,7 +28,6 @@ while low <= high:
     totalhr=0
     for i in piles:
         totalhr += math.ceil(i/mid)
-
     if totalhr <= h:
         ans = min(ans,mid)
         high = mid - 1
