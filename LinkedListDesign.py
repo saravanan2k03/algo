@@ -124,14 +124,14 @@ class LinkedList:
             curr = curr.next
             counter += 1
         return 'Not found'
-    def maxelement(self):
-        curr = self.head
-        max = curr.data
-        while curr != None:
-            if max < curr.next.data:
-                max = curr.next.data
-            curr = curr.next
-        return max 
+    # def maxelement(self):
+    #     curr = self.head
+    #     max = curr.data
+    #     while curr != None:
+    #         if max < curr.next.data:
+    #             max = curr.next.data
+    #         curr = curr.next
+    #     return max 
 
             
 
@@ -150,7 +150,7 @@ print(L)
 # print(L.remove(5))
 # print(L.remove(5))
 print(L.search(3))
-print(L.maxelement())
+# print(L.maxelement())
 # L.remove(3)
 # L.append(5)
 
